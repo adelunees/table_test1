@@ -1,0 +1,59 @@
+/* Стили для таблицы */
+table {
+    width: 100vw;
+    max-width: 1200px;
+    padding: 30px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+th {
+    background-color: #cfb6fc;
+    color: white;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: #b795f5;
+}
+
+th::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+}
+
+th.asc::after {
+    content: '▲';
+}
+
+th.desc::after {
+    content: '▼';
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #dae4f7;
+    cursor: pointer;
+}
+
+tr.selected {
+    background-color: #a9dfbf;
+}
+
+td {
+    border: 1px solid #ddd;
+}

@@ -1,0 +1,11 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #dfd0f7, #ebf0fa);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
